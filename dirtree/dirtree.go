@@ -1,61 +1,71 @@
+// Package dirtree provides a way to generate a directory tree.
+//
+// Example usage:
+//
+//	tree, err := dirtree.NewTree("/home/me")
+//
+// I did my best to keep it OS-independent but truth be told I only tested it
+// on OS X and Debian Linux so YMMV. You've been warned.
 package dirtree
 
 import (
-	"log"
+	"os"
 	"path/filepath"
+	"time"
 )
 
-type File struct {
-	Name string
+// FileInfo is a struct created from os.FileInfo interface for serialization.
+type FileInfo struct {
+	Name    string      `json:"name"`
+	Size    int64       `json:"size"`
+	Mode    os.FileMode `json:"mode"`
+	ModTime time.Time   `json:"modTime"`
+	IsDir   bool        `json:"isDir"`
 }
 
-type Folder struct {
-	Name    string
-	Files   []File
-	Folders map[string]*Folder
+// Helper function to create a local FileInfo struct from os.FileInfo interface.
+func fileInfoFromInterface(v os.FileInfo) *FileInfo {
+	return &FileInfo{v.Name(), v.Size(), v.Mode(), v.ModTime(), v.IsDir()}
 }
 
-func newFolder(name string) *Folder {
-	return &Folder{name, []File{}, make(map[string]*Folder)}
+// Node represents a node in a directory tree.
+type Node struct {
+	FullPath string    `json:"path"`
+	Info     *FileInfo `json:"info"`
+	Children []*Node   `json:"children"`
+	Parent   *Node     `json:"-"`
 }
 
-func (f *Folder) getFolder(name string) *Folder {
-	if nextF, ok := f.Folders[name]; ok {
-		return nextF
-	} else {
-		log.Fatalf("Expected nested folder %v in %v\n", name, f.Name)
+// New Create directory hierarchy.
+func New(root string) (result *Node, err error) {
+	absRoot, err := filepath.Abs(root)
+	if err != nil {
+		return
 	}
-	return &Folder{} // cannot happen
-}
-
-func (f *Folder) addFolder(path []string) {
-	for i, segment := range path {
-		if i == len(path)-1 { // last segment == new folder
-			f.Folders[segment] = newFolder(segment)
+	parents := make(map[string]*Node)
+	walkFunc := func(path string, info os.FileInfo, err error) error {
+		if err != nil {
+			return err
+		}
+		parents[path] = &Node{
+			FullPath: path,
+			Info:     fileInfoFromInterface(info),
+			Children: make([]*Node, 0),
+		}
+		return nil
+	}
+	if err = filepath.Walk(absRoot, walkFunc); err != nil {
+		return
+	}
+	for path, node := range parents {
+		parentPath := filepath.Dir(path)
+		parent, exists := parents[parentPath]
+		if !exists { // If a parent does not exist, this is the root.
+			result = node
 		} else {
-			f.getFolder(segment).addFolder(path[1:])
+			node.Parent = parent
+			parent.Children = append(parent.Children, node)
 		}
 	}
-}
-
-func (f *Folder) addFile(path []string) {
-	for i, segment := range path {
-		if i == len(path)-1 { // last segment == file
-			f.Files = append(f.Files, File{segment})
-		} else {
-			f.getFolder(segment).addFile(path[1:])
-			return
-		}
-	}
-}
-
-func (f *Folder) String() string {
-	var str string
-	for _, file := range f.Files {
-		str += f.Name + string(filepath.Separator) + file.Name + "\n"
-	}
-	for _, folder := range f.Folders {
-		str += folder.String()
-	}
-	return str
+	return
 }
