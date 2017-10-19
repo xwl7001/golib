@@ -34,10 +34,11 @@ func fileInfoFromInterface(v os.FileInfo) *FileInfo {
 
 // Node represents a node in a directory tree.
 type Node struct {
-	FullPath string           `json:"path"`
-	Info     *FileInfo        `json:"-"`
-	Children map[string]*Node `json:"children"`
-	Parent   *Node            `json:"-"`
+	workingDir string           `json:"-"`
+	FullPath   string           `json:"path"`
+	Info       *FileInfo        `json:"-"`
+	Children   map[string]*Node `json:"children"`
+	Parent     *Node            `json:"-"`
 }
 
 func (n *Node) addFolder(fi os.FileInfo) {
@@ -52,10 +53,11 @@ func (n *Node) addFolder(fi os.FileInfo) {
 	// fmt.Println(FullPath)
 
 	dir := &Node{
-		FullPath: FullPath,
-		Info:     fileInfoFromInterface(fi),
-		Children: make(map[string]*Node),
-		Parent:   n,
+		workingDir: n.workingDir,
+		FullPath:   FullPath,
+		Info:       fileInfoFromInterface(fi),
+		Children:   make(map[string]*Node),
+		Parent:     n,
 	}
 
 	files, err := ioutil.ReadDir(FullPath)
@@ -84,26 +86,35 @@ func (n *Node) addFile(fi os.FileInfo) {
 		FullPath = filepath.Join(n.Parent.FullPath, name)
 	}
 	dir := &Node{
-		FullPath: FullPath,
-		Info:     fileInfoFromInterface(fi),
-		Children: make(map[string]*Node),
-		Parent:   n,
+		workingDir: n.workingDir,
+		FullPath:   FullPath,
+		Info:       fileInfoFromInterface(fi),
+		Children:   make(map[string]*Node),
+		Parent:     n,
 	}
 	n.Children[name] = dir
 }
 
-// func (f *Node) getFolder(path string) *Node {
-// 	segments := SplitPath(path)
-// 	if len(segments) == 1 {
-// 		return f.Children[path]
-// 	} else {
-// 		return f.getFolder(strings.Join(segments[1:], string(os.PathSeparator)))
-// 	}
-// }
+func (n *Node) getFolder(path string) *Node {
+	path = strings.TrimPrefix(path, string(os.PathSeparator))
+	segments := SplitPath(path)
+	if len(segments) == 1 {
+		return n.Children[segments[0]]
+	}
+	return n.Children[segments[0]].getFolder(strings.Join(segments[1:], string(os.PathSeparator)))
+}
+
+func (n *Node) Size() int64 {
+	size := n.Info.Size
+	for _, node := range n.Children {
+		size += node.Size()
+	}
+	return size
+}
 
 func (n *Node) String() string {
 	res := make([]string, 0)
-	res = append(res, n.FullPath)
+	res = append(res, strings.TrimPrefix(n.FullPath, n.workingDir))
 	for _, node := range n.Children {
 		res = append(res, node.String())
 	}
@@ -150,8 +161,9 @@ func New(root string) (*Node, error) {
 	cleanRoot := path.Clean(root)
 	log.Println("clen root:", cleanRoot)
 	res := &Node{
-		FullPath: cleanRoot,
-		Children: make(map[string]*Node),
+		workingDir: cleanRoot,
+		FullPath:   cleanRoot,
+		Children:   make(map[string]*Node),
 	}
 	for _, fi := range files {
 		if fi.IsDir() {

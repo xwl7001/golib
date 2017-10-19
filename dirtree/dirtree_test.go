@@ -35,7 +35,8 @@ func TestDirTree2(t *testing.T) {
 		t.Fatalf("error traversing the filesystem: %v\n", err)
 	}
 	// matchRecursively(root, "data")
-	fmt.Println(root.String())
+	// fmt.Println(root.String())
+	fmt.Println(root.getFolder("/lifei6671").Size())
 	// js, _ := json.Marshal(root)
 	// fmt.Println(string(js))
 }
