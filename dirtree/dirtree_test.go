@@ -1,7 +1,9 @@
 package dirtree
 
 import (
+	"encoding/json"
 	"fmt"
+	"io/ioutil"
 	"os"
 	"strings"
 	"testing"
@@ -30,15 +32,18 @@ func DirTree(t *testing.T) {
 }
 
 func TestDirTree2(t *testing.T) {
-	root, err := New("../../../")
+	root, err := New("../../")
 	if err != nil {
 		t.Fatalf("error traversing the filesystem: %v\n", err)
 	}
 	// matchRecursively(root, "data")
 	// fmt.Println(root.String())
-	fmt.Println(root.getFolder("/lifei6671").Size())
-	// js, _ := json.Marshal(root)
+	// path := "/lifei6671/mindoc/views"
+	// fmt.Println(root.getFolder(path).Size())
+	// fmt.Println(root.getFolder(path))
+	js, _ := json.MarshalIndent(root, "", "  ")
 	// fmt.Println(string(js))
+	ioutil.WriteFile("test.json", js, 0655)
 }
 
 // func TestDirTree(t *testing.T) {

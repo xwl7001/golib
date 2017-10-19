@@ -1,0 +1,1745 @@
+{
+  "path": "",
+  "children": {
+    "avatar": {
+      "path": "avatar",
+      "info": {
+        "name": "avatar",
+        "size": 578,
+        "mode": 2147484141,
+        "modTime": "2017-10-17T11:40:28+08:00",
+        "isDir": true
+      },
+      "children": {
+        "Makefile": {
+          "path": "avatar/Makefile",
+          "info": {
+            "name": "Makefile",
+            "size": 280,
+            "mode": 493,
+            "modTime": "2016-10-16T07:48:44+08:00",
+            "isDir": false
+          }
+        },
+        "README.md": {
+          "path": "avatar/README.md",
+          "info": {
+            "name": "README.md",
+            "size": 2693,
+            "mode": 493,
+            "modTime": "2016-10-16T07:48:44+08:00",
+            "isDir": false
+          }
+        },
+        "avatar.go": {
+          "path": "avatar/avatar.go",
+          "info": {
+            "name": "avatar.go",
+            "size": 3107,
+            "mode": 493,
+            "modTime": "2017-10-17T11:19:58+08:00",
+            "isDir": false
+          }
+        },
+        "avatar_test.go": {
+          "path": "avatar/avatar_test.go",
+          "info": {
+            "name": "avatar_test.go",
+            "size": 1923,
+            "mode": 493,
+            "modTime": "2016-10-16T07:48:44+08:00",
+            "isDir": false
+          }
+        },
+        "cmd": {
+          "path": "avatar/cmd",
+          "info": {
+            "name": "cmd",
+            "size": 102,
+            "mode": 2147484141,
+            "modTime": "2016-10-16T07:48:44+08:00",
+            "isDir": true
+          },
+          "children": {
+            "avatar": {
+              "path": "avatar/cmd/avatar",
+              "info": {
+                "name": "avatar",
+                "size": 204,
+                "mode": 2147484141,
+                "modTime": "2017-10-17T11:40:15+08:00",
+                "isDir": true
+              },
+              "children": {
+                "avatar": {
+                  "path": "avatar/cmd/avatar/avatar",
+                  "info": {
+                    "name": "avatar",
+                    "size": 10414244,
+                    "mode": 493,
+                    "modTime": "2017-10-17T11:31:36+08:00",
+                    "isDir": false
+                  }
+                },
+                "main.go": {
+                  "path": "avatar/cmd/avatar/main.go",
+                  "info": {
+                    "name": "main.go",
+                    "size": 2984,
+                    "mode": 493,
+                    "modTime": "2017-10-17T11:31:31+08:00",
+                    "isDir": false
+                  }
+                },
+                "resource": {
+                  "path": "avatar/cmd/avatar/resource",
+                  "info": {
+                    "name": "resource",
+                    "size": 170,
+                    "mode": 2147484141,
+                    "modTime": "2017-10-17T00:35:20+08:00",
+                    "isDir": true
+                  },
+                  "children": {
+                    "fonts": {
+                      "path": "avatar/cmd/avatar/resource/fonts",
+                      "info": {
+                        "name": "fonts",
+                        "size": 102,
+                        "mode": 2147484141,
+                        "modTime": "2016-10-16T07:48:44+08:00",
+                        "isDir": true
+                      },
+                      "children": {
+                        "Hiragino_Sans_GB_W3.ttf": {
+                          "path": "avatar/cmd/avatar/resource/fonts/Hiragino_Sans_GB_W3.ttf",
+                          "info": {
+                            "name": "Hiragino_Sans_GB_W3.ttf",
+                            "size": 11780536,
+                            "mode": 493,
+                            "modTime": "2016-10-16T07:48:44+08:00",
+                            "isDir": false
+                          }
+                        }
+                      }
+                    },
+                    "images": {
+                      "path": "avatar/cmd/avatar/resource/images",
+                      "info": {
+                        "name": "images",
+                        "size": 170,
+                        "mode": 2147484141,
+                        "modTime": "2016-10-16T07:48:44+08:00",
+                        "isDir": true
+                      },
+                      "children": {
+                        "default_avatar.png": {
+                          "path": "avatar/cmd/avatar/resource/images/default_avatar.png",
+                          "info": {
+                            "name": "default_avatar.png",
+                            "size": 2145,
+                            "mode": 493,
+                            "modTime": "2016-10-16T07:48:44+08:00",
+                            "isDir": false
+                          }
+                        },
+                        "hello.png": {
+                          "path": "avatar/cmd/avatar/resource/images/hello.png",
+                          "info": {
+                            "name": "hello.png",
+                            "size": 817,
+                            "mode": 493,
+                            "modTime": "2016-10-16T07:48:44+08:00",
+                            "isDir": false
+                          }
+                        },
+                        "kong.png": {
+                          "path": "avatar/cmd/avatar/resource/images/kong.png",
+                          "info": {
+                            "name": "kong.png",
+                            "size": 1848,
+                            "mode": 493,
+                            "modTime": "2016-10-16T07:48:44+08:00",
+                            "isDir": false
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "draw.go": {
+          "path": "avatar/draw.go",
+          "info": {
+            "name": "draw.go",
+            "size": 2237,
+            "mode": 493,
+            "modTime": "2016-10-16T07:48:44+08:00",
+            "isDir": false
+          }
+        },
+        "glide.lock": {
+          "path": "avatar/glide.lock",
+          "info": {
+            "name": "glide.lock",
+            "size": 1448,
+            "mode": 493,
+            "modTime": "2016-10-16T07:48:44+08:00",
+            "isDir": false
+          }
+        },
+        "glide.yaml": {
+          "path": "avatar/glide.yaml",
+          "info": {
+            "name": "glide.yaml",
+            "size": 410,
+            "mode": 493,
+            "modTime": "2016-10-16T07:48:44+08:00",
+            "isDir": false
+          }
+        },
+        "identicon": {
+          "path": "avatar/identicon",
+          "info": {
+            "name": "identicon",
+            "size": 442,
+            "mode": 2147484141,
+            "modTime": "2017-10-17T11:39:41+08:00",
+            "isDir": true
+          },
+          "children": {
+            "README.md": {
+              "path": "avatar/identicon/README.md",
+              "info": {
+                "name": "README.md",
+                "size": 1466,
+                "mode": 493,
+                "modTime": "2017-06-30T05:43:50+08:00",
+                "isDir": false
+              }
+            },
+            "block.go": {
+              "path": "avatar/identicon/block.go",
+              "info": {
+                "name": "block.go",
+                "size": 7556,
+                "mode": 493,
+                "modTime": "2017-06-30T05:43:50+08:00",
+                "isDir": false
+              }
+            },
+            "doc.go": {
+              "path": "avatar/identicon/doc.go",
+              "info": {
+                "name": "doc.go",
+                "size": 1539,
+                "mode": 493,
+                "modTime": "2017-06-30T05:43:50+08:00",
+                "isDir": false
+              }
+            },
+            "identicon.go": {
+              "path": "avatar/identicon/identicon.go",
+              "info": {
+                "name": "identicon.go",
+                "size": 3984,
+                "mode": 493,
+                "modTime": "2017-06-30T05:43:50+08:00",
+                "isDir": false
+              }
+            },
+            "identicon_test.go": {
+              "path": "avatar/identicon/identicon_test.go",
+              "info": {
+                "name": "identicon_test.go",
+                "size": 2932,
+                "mode": 493,
+                "modTime": "2017-06-30T05:43:50+08:00",
+                "isDir": false
+              }
+            },
+            "polygon.go": {
+              "path": "avatar/identicon/polygon.go",
+              "info": {
+                "name": "polygon.go",
+                "size": 2120,
+                "mode": 493,
+                "modTime": "2017-06-30T05:43:50+08:00",
+                "isDir": false
+              }
+            },
+            "screenshot": {
+              "path": "avatar/identicon/screenshot",
+              "info": {
+                "name": "screenshot",
+                "size": 238,
+                "mode": 2147484141,
+                "modTime": "2017-06-30T05:43:50+08:00",
+                "isDir": true
+              },
+              "children": {
+                "1.png": {
+                  "path": "avatar/identicon/screenshot/1.png",
+                  "info": {
+                    "name": "1.png",
+                    "size": 1083,
+                    "mode": 493,
+                    "modTime": "2017-06-30T05:43:50+08:00",
+                    "isDir": false
+                  }
+                },
+                "4.png": {
+                  "path": "avatar/identicon/screenshot/4.png",
+                  "info": {
+                    "name": "4.png",
+                    "size": 802,
+                    "mode": 493,
+                    "modTime": "2017-06-30T05:43:50+08:00",
+                    "isDir": false
+                  }
+                },
+                "5.png": {
+                  "path": "avatar/identicon/screenshot/5.png",
+                  "info": {
+                    "name": "5.png",
+                    "size": 902,
+                    "mode": 493,
+                    "modTime": "2017-06-30T05:43:50+08:00",
+                    "isDir": false
+                  }
+                },
+                "6.png": {
+                  "path": "avatar/identicon/screenshot/6.png",
+                  "info": {
+                    "name": "6.png",
+                    "size": 1070,
+                    "mode": 493,
+                    "modTime": "2017-06-30T05:43:50+08:00",
+                    "isDir": false
+                  }
+                },
+                "7.png": {
+                  "path": "avatar/identicon/screenshot/7.png",
+                  "info": {
+                    "name": "7.png",
+                    "size": 455,
+                    "mode": 493,
+                    "modTime": "2017-06-30T05:43:50+08:00",
+                    "isDir": false
+                  }
+                }
+              }
+            },
+            "testdata": {
+              "path": "avatar/identicon/testdata",
+              "info": {
+                "name": "testdata",
+                "size": 102,
+                "mode": 2147484141,
+                "modTime": "2017-06-30T05:43:50+08:00",
+                "isDir": true
+              }
+            }
+          }
+        },
+        "initials.go": {
+          "path": "avatar/initials.go",
+          "info": {
+            "name": "initials.go",
+            "size": 3295,
+            "mode": 493,
+            "modTime": "2016-10-16T07:48:44+08:00",
+            "isDir": false
+          }
+        },
+        "randomcolor.go": {
+          "path": "avatar/randomcolor.go",
+          "info": {
+            "name": "randomcolor.go",
+            "size": 853,
+            "mode": 420,
+            "modTime": "2017-10-17T11:19:33+08:00",
+            "isDir": false
+          }
+        }
+      }
+    },
+    "echo": {
+      "path": "echo",
+      "info": {
+        "name": "echo",
+        "size": 1088,
+        "mode": 2147484141,
+        "modTime": "2017-10-12T14:07:54+08:00",
+        "isDir": true
+      },
+      "children": {
+        "Gopkg.lock": {
+          "path": "echo/Gopkg.lock",
+          "info": {
+            "name": "Gopkg.lock",
+            "size": 1976,
+            "mode": 420,
+            "modTime": "2017-10-12T14:07:53+08:00",
+            "isDir": false
+          }
+        },
+        "Gopkg.toml": {
+          "path": "echo/Gopkg.toml",
+          "info": {
+            "name": "Gopkg.toml",
+            "size": 3241,
+            "mode": 420,
+            "modTime": "2017-10-12T14:07:53+08:00",
+            "isDir": false
+          }
+        },
+        "LICENSE": {
+          "path": "echo/LICENSE",
+          "info": {
+            "name": "LICENSE",
+            "size": 1075,
+            "mode": 420,
+            "modTime": "2017-10-12T14:07:53+08:00",
+            "isDir": false
+          }
+        },
+        "Makefile": {
+          "path": "echo/Makefile",
+          "info": {
+            "name": "Makefile",
+            "size": 312,
+            "mode": 420,
+            "modTime": "2017-10-12T14:07:53+08:00",
+            "isDir": false
+          }
+        },
+        "README.md": {
+          "path": "echo/README.md",
+          "info": {
+            "name": "README.md",
+            "size": 2565,
+            "mode": 420,
+            "modTime": "2017-10-12T14:21:20+08:00",
+            "isDir": false
+          }
+        },
+        "_fixture": {
+          "path": "echo/_fixture",
+          "info": {
+            "name": "_fixture",
+            "size": 238,
+            "mode": 2147484141,
+            "modTime": "2017-10-12T14:07:53+08:00",
+            "isDir": true
+          },
+          "children": {
+            "certs": {
+              "path": "echo/_fixture/certs",
+              "info": {
+                "name": "certs",
+                "size": 136,
+                "mode": 2147484141,
+                "modTime": "2017-10-12T14:07:53+08:00",
+                "isDir": true
+              },
+              "children": {
+                "cert.pem": {
+                  "path": "echo/_fixture/certs/cert.pem",
+                  "info": {
+                    "name": "cert.pem",
+                    "size": 1090,
+                    "mode": 420,
+                    "modTime": "2017-10-12T14:07:53+08:00",
+                    "isDir": false
+                  }
+                },
+                "key.pem": {
+                  "path": "echo/_fixture/certs/key.pem",
+                  "info": {
+                    "name": "key.pem",
+                    "size": 1679,
+                    "mode": 420,
+                    "modTime": "2017-10-12T14:07:53+08:00",
+                    "isDir": false
+                  }
+                }
+              }
+            },
+            "favicon.ico": {
+              "path": "echo/_fixture/favicon.ico",
+              "info": {
+                "name": "favicon.ico",
+                "size": 1150,
+                "mode": 420,
+                "modTime": "2017-10-12T14:07:53+08:00",
+                "isDir": false
+              }
+            },
+            "folder": {
+              "path": "echo/_fixture/folder",
+              "info": {
+                "name": "folder",
+                "size": 102,
+                "mode": 2147484141,
+                "modTime": "2017-10-12T14:07:53+08:00",
+                "isDir": true
+              },
+              "children": {
+                "index.html": {
+                  "path": "echo/_fixture/folder/index.html",
+                  "info": {
+                    "name": "index.html",
+                    "size": 122,
+                    "mode": 420,
+                    "modTime": "2017-10-12T14:07:53+08:00",
+                    "isDir": false
+                  }
+                }
+              }
+            },
+            "images": {
+              "path": "echo/_fixture/images",
+              "info": {
+                "name": "images",
+                "size": 102,
+                "mode": 2147484141,
+                "modTime": "2017-10-12T14:07:53+08:00",
+                "isDir": true
+              },
+              "children": {
+                "walle.png": {
+                  "path": "echo/_fixture/images/walle.png",
+                  "info": {
+                    "name": "walle.png",
+                    "size": 219885,
+                    "mode": 420,
+                    "modTime": "2017-10-12T14:07:53+08:00",
+                    "isDir": false
+                  }
+                }
+              }
+            },
+            "index.html": {
+              "path": "echo/_fixture/index.html",
+              "info": {
+                "name": "index.html",
+                "size": 122,
+                "mode": 420,
+                "modTime": "2017-10-12T14:07:53+08:00",
+                "isDir": false
+              }
+            }
+          }
+        },
+        "bind.go": {
+          "path": "echo/bind.go",
+          "info": {
+            "name": "bind.go",
+            "size": 7528,
+            "mode": 420,
+            "modTime": "2017-10-12T14:07:53+08:00",
+            "isDir": false
+          }
+        },
+        "bind_test.go": {
+          "path": "echo/bind_test.go",
+          "info": {
+            "name": "bind_test.go",
+            "size": 8663,
+            "mode": 420,
+            "modTime": "2017-10-12T14:07:53+08:00",
+            "isDir": false
+          }
+        },
+        "context.go": {
+          "path": "echo/context.go",
+          "info": {
+            "name": "context.go",
+            "size": 14415,
+            "mode": 420,
+            "modTime": "2017-10-12T14:07:53+08:00",
+            "isDir": false
+          }
+        },
+        "context_test.go": {
+          "path": "echo/context_test.go",
+          "info": {
+            "name": "context_test.go",
+            "size": 11937,
+            "mode": 420,
+            "modTime": "2017-10-12T14:07:53+08:00",
+            "isDir": false
+          }
+        },
+        "echo.go": {
+          "path": "echo/echo.go",
+          "info": {
+            "name": "echo.go",
+            "size": 20417,
+            "mode": 420,
+            "modTime": "2017-10-12T14:21:20+08:00",
+            "isDir": false
+          }
+        },
+        "echo_go1.8.go": {
+          "path": "echo/echo_go1.8.go",
+          "info": {
+            "name": "echo_go1.8.go",
+            "size": 516,
+            "mode": 420,
+            "modTime": "2017-10-12T14:07:53+08:00",
+            "isDir": false
+          }
+        },
+        "echo_go1.8_test.go": {
+          "path": "echo/echo_go1.8_test.go",
+          "info": {
+            "name": "echo_go1.8_test.go",
+            "size": 413,
+            "mode": 420,
+            "modTime": "2017-10-12T14:07:53+08:00",
+            "isDir": false
+          }
+        },
+        "echo_test.go": {
+          "path": "echo/echo_test.go",
+          "info": {
+            "name": "echo_test.go",
+            "size": 9776,
+            "mode": 420,
+            "modTime": "2017-10-12T14:07:53+08:00",
+            "isDir": false
+          }
+        },
+        "group.go": {
+          "path": "echo/group.go",
+          "info": {
+            "name": "group.go",
+            "size": 4033,
+            "mode": 420,
+            "modTime": "2017-10-12T14:07:53+08:00",
+            "isDir": false
+          }
+        },
+        "group_test.go": {
+          "path": "echo/group_test.go",
+          "info": {
+            "name": "group_test.go",
+            "size": 1366,
+            "mode": 420,
+            "modTime": "2017-10-12T14:07:53+08:00",
+            "isDir": false
+          }
+        },
+        "log.go": {
+          "path": "echo/log.go",
+          "info": {
+            "name": "log.go",
+            "size": 905,
+            "mode": 420,
+            "modTime": "2017-10-12T14:07:53+08:00",
+            "isDir": false
+          }
+        },
+        "middleware": {
+          "path": "echo/middleware",
+          "info": {
+            "name": "middleware",
+            "size": 1258,
+            "mode": 2147484141,
+            "modTime": "2017-10-12T14:07:54+08:00",
+            "isDir": true
+          },
+          "children": {
+            "basic_auth.go": {
+              "path": "echo/middleware/basic_auth.go",
+              "info": {
+                "name": "basic_auth.go",
+                "size": 2585,
+                "mode": 420,
+                "modTime": "2017-10-12T14:21:20+08:00",
+                "isDir": false
+              }
+            },
+            "basic_auth_test.go": {
+              "path": "echo/middleware/basic_auth_test.go",
+              "info": {
+                "name": "basic_auth_test.go",
+                "size": 1440,
+                "mode": 420,
+                "modTime": "2017-10-12T14:21:20+08:00",
+                "isDir": false
+              }
+            },
+            "body_dump.go": {
+              "path": "echo/middleware/body_dump.go",
+              "info": {
+                "name": "body_dump.go",
+                "size": 2603,
+                "mode": 420,
+                "modTime": "2017-10-12T14:21:20+08:00",
+                "isDir": false
+              }
+            },
+            "body_dump_test.go": {
+              "path": "echo/middleware/body_dump_test.go",
+              "info": {
+                "name": "body_dump_test.go",
+                "size": 903,
+                "mode": 420,
+                "modTime": "2017-10-12T14:21:20+08:00",
+                "isDir": false
+              }
+            },
+            "body_limit.go": {
+              "path": "echo/middleware/body_limit.go",
+              "info": {
+                "name": "body_limit.go",
+                "size": 2744,
+                "mode": 420,
+                "modTime": "2017-10-12T14:21:20+08:00",
+                "isDir": false
+              }
+            },
+            "body_limit_test.go": {
+              "path": "echo/middleware/body_limit_test.go",
+              "info": {
+                "name": "body_limit_test.go",
+                "size": 1444,
+                "mode": 420,
+                "modTime": "2017-10-12T14:21:20+08:00",
+                "isDir": false
+              }
+            },
+            "compress.go": {
+              "path": "echo/middleware/compress.go",
+              "info": {
+                "name": "compress.go",
+                "size": 2922,
+                "mode": 420,
+                "modTime": "2017-10-12T14:21:20+08:00",
+                "isDir": false
+              }
+            },
+            "compress_test.go": {
+              "path": "echo/middleware/compress_test.go",
+              "info": {
+                "name": "compress_test.go",
+                "size": 2792,
+                "mode": 420,
+                "modTime": "2017-10-12T14:21:20+08:00",
+                "isDir": false
+              }
+            },
+            "cors.go": {
+              "path": "echo/middleware/cors.go",
+              "info": {
+                "name": "cors.go",
+                "size": 4439,
+                "mode": 420,
+                "modTime": "2017-10-12T14:21:20+08:00",
+                "isDir": false
+              }
+            },
+            "cors_test.go": {
+              "path": "echo/middleware/cors_test.go",
+              "info": {
+                "name": "cors_test.go",
+                "size": 1526,
+                "mode": 420,
+                "modTime": "2017-10-12T14:21:20+08:00",
+                "isDir": false
+              }
+            },
+            "csrf.go": {
+              "path": "echo/middleware/csrf.go",
+              "info": {
+                "name": "csrf.go",
+                "size": 5792,
+                "mode": 420,
+                "modTime": "2017-10-12T14:21:20+08:00",
+                "isDir": false
+              }
+            },
+            "csrf_test.go": {
+              "path": "echo/middleware/csrf_test.go",
+              "info": {
+                "name": "csrf_test.go",
+                "size": 2105,
+                "mode": 420,
+                "modTime": "2017-10-12T14:21:20+08:00",
+                "isDir": false
+              }
+            },
+            "jwt.go": {
+              "path": "echo/middleware/jwt.go",
+              "info": {
+                "name": "jwt.go",
+                "size": 5225,
+                "mode": 420,
+                "modTime": "2017-10-12T14:21:20+08:00",
+                "isDir": false
+              }
+            },
+            "jwt_test.go": {
+              "path": "echo/middleware/jwt_test.go",
+              "info": {
+                "name": "jwt_test.go",
+                "size": 5887,
+                "mode": 420,
+                "modTime": "2017-10-12T14:21:20+08:00",
+                "isDir": false
+              }
+            },
+            "key_auth.go": {
+              "path": "echo/middleware/key_auth.go",
+              "info": {
+                "name": "key_auth.go",
+                "size": 3531,
+                "mode": 420,
+                "modTime": "2017-10-12T14:21:20+08:00",
+                "isDir": false
+              }
+            },
+            "key_auth_test.go": {
+              "path": "echo/middleware/key_auth_test.go",
+              "info": {
+                "name": "key_auth_test.go",
+                "size": 1553,
+                "mode": 420,
+                "modTime": "2017-10-12T14:21:20+08:00",
+                "isDir": false
+              }
+            },
+            "logger.go": {
+              "path": "echo/middleware/logger.go",
+              "info": {
+                "name": "logger.go",
+                "size": 5253,
+                "mode": 420,
+                "modTime": "2017-10-12T14:21:20+08:00",
+                "isDir": false
+              }
+            },
+            "logger_test.go": {
+              "path": "echo/middleware/logger_test.go",
+              "info": {
+                "name": "logger_test.go",
+                "size": 4033,
+                "mode": 420,
+                "modTime": "2017-10-12T14:21:20+08:00",
+                "isDir": false
+              }
+            },
+            "method_override.go": {
+              "path": "echo/middleware/method_override.go",
+              "info": {
+                "name": "method_override.go",
+                "size": 2532,
+                "mode": 420,
+                "modTime": "2017-10-12T14:21:20+08:00",
+                "isDir": false
+              }
+            },
+            "method_override_test.go": {
+              "path": "echo/middleware/method_override_test.go",
+              "info": {
+                "name": "method_override_test.go",
+                "size": 1418,
+                "mode": 420,
+                "modTime": "2017-10-12T14:21:20+08:00",
+                "isDir": false
+              }
+            },
+            "middleware.go": {
+              "path": "echo/middleware/middleware.go",
+              "info": {
+                "name": "middleware.go",
+                "size": 323,
+                "mode": 420,
+                "modTime": "2017-10-12T14:21:20+08:00",
+                "isDir": false
+              }
+            },
+            "proxy.go": {
+              "path": "echo/middleware/proxy.go",
+              "info": {
+                "name": "proxy.go",
+                "size": 4230,
+                "mode": 420,
+                "modTime": "2017-10-12T14:21:20+08:00",
+                "isDir": false
+              }
+            },
+            "proxy_test.go": {
+              "path": "echo/middleware/proxy_test.go",
+              "info": {
+                "name": "proxy_test.go",
+                "size": 1712,
+                "mode": 420,
+                "modTime": "2017-10-12T14:21:20+08:00",
+                "isDir": false
+              }
+            },
+            "recover.go": {
+              "path": "echo/middleware/recover.go",
+              "info": {
+                "name": "recover.go",
+                "size": 2091,
+                "mode": 420,
+                "modTime": "2017-10-12T14:21:20+08:00",
+                "isDir": false
+              }
+            },
+            "recover_test.go": {
+              "path": "echo/middleware/recover_test.go",
+              "info": {
+                "name": "recover_test.go",
+                "size": 561,
+                "mode": 420,
+                "modTime": "2017-10-12T14:21:20+08:00",
+                "isDir": false
+              }
+            },
+            "redirect.go": {
+              "path": "echo/middleware/redirect.go",
+              "info": {
+                "name": "redirect.go",
+                "size": 5520,
+                "mode": 420,
+                "modTime": "2017-10-12T14:21:20+08:00",
+                "isDir": false
+              }
+            },
+            "redirect_test.go": {
+              "path": "echo/middleware/redirect_test.go",
+              "info": {
+                "name": "redirect_test.go",
+                "size": 2411,
+                "mode": 420,
+                "modTime": "2017-10-12T14:21:20+08:00",
+                "isDir": false
+              }
+            },
+            "request_id.go": {
+              "path": "echo/middleware/request_id.go",
+              "info": {
+                "name": "request_id.go",
+                "size": 1439,
+                "mode": 420,
+                "modTime": "2017-10-12T14:21:20+08:00",
+                "isDir": false
+              }
+            },
+            "request_id_test.go": {
+              "path": "echo/middleware/request_id_test.go",
+              "info": {
+                "name": "request_id_test.go",
+                "size": 750,
+                "mode": 420,
+                "modTime": "2017-10-12T14:21:20+08:00",
+                "isDir": false
+              }
+            },
+            "secure.go": {
+              "path": "echo/middleware/secure.go",
+              "info": {
+                "name": "secure.go",
+                "size": 4266,
+                "mode": 420,
+                "modTime": "2017-10-12T14:21:20+08:00",
+                "isDir": false
+              }
+            },
+            "secure_test.go": {
+              "path": "echo/middleware/secure_test.go",
+              "info": {
+                "name": "secure_test.go",
+                "size": 1518,
+                "mode": 420,
+                "modTime": "2017-10-12T14:21:20+08:00",
+                "isDir": false
+              }
+            },
+            "slash.go": {
+              "path": "echo/middleware/slash.go",
+              "info": {
+                "name": "slash.go",
+                "size": 2885,
+                "mode": 420,
+                "modTime": "2017-10-12T14:21:20+08:00",
+                "isDir": false
+              }
+            },
+            "slash_test.go": {
+              "path": "echo/middleware/slash_test.go",
+              "info": {
+                "name": "slash_test.go",
+                "size": 1981,
+                "mode": 420,
+                "modTime": "2017-10-12T14:21:20+08:00",
+                "isDir": false
+              }
+            },
+            "static.go": {
+              "path": "echo/middleware/static.go",
+              "info": {
+                "name": "static.go",
+                "size": 3343,
+                "mode": 420,
+                "modTime": "2017-10-12T14:21:20+08:00",
+                "isDir": false
+              }
+            },
+            "static_test.go": {
+              "path": "echo/middleware/static_test.go",
+              "info": {
+                "name": "static_test.go",
+                "size": 1700,
+                "mode": 420,
+                "modTime": "2017-10-12T14:21:20+08:00",
+                "isDir": false
+              }
+            }
+          }
+        },
+        "response.go": {
+          "path": "echo/response.go",
+          "info": {
+            "name": "response.go",
+            "size": 3075,
+            "mode": 420,
+            "modTime": "2017-10-12T14:07:54+08:00",
+            "isDir": false
+          }
+        },
+        "response_test.go": {
+          "path": "echo/response_test.go",
+          "info": {
+            "name": "response_test.go",
+            "size": 459,
+            "mode": 420,
+            "modTime": "2017-10-12T14:07:54+08:00",
+            "isDir": false
+          }
+        },
+        "router.go": {
+          "path": "echo/router.go",
+          "info": {
+            "name": "router.go",
+            "size": 8691,
+            "mode": 420,
+            "modTime": "2017-10-12T14:07:54+08:00",
+            "isDir": false
+          }
+        },
+        "router_test.go": {
+          "path": "echo/router_test.go",
+          "info": {
+            "name": "router_test.go",
+            "size": 28349,
+            "mode": 420,
+            "modTime": "2017-10-12T14:07:54+08:00",
+            "isDir": false
+          }
+        },
+        "util_go17.go": {
+          "path": "echo/util_go17.go",
+          "info": {
+            "name": "util_go17.go",
+            "size": 184,
+            "mode": 420,
+            "modTime": "2017-10-12T14:07:54+08:00",
+            "isDir": false
+          }
+        },
+        "util_go18.go": {
+          "path": "echo/util_go18.go",
+          "info": {
+            "name": "util_go18.go",
+            "size": 169,
+            "mode": 420,
+            "modTime": "2017-10-12T14:07:54+08:00",
+            "isDir": false
+          }
+        }
+      }
+    },
+    "golib": {
+      "path": "golib",
+      "info": {
+        "name": "golib",
+        "size": 272,
+        "mode": 2147484141,
+        "modTime": "2017-10-18T18:16:55+08:00",
+        "isDir": true
+      },
+      "children": {
+        "consistent": {
+          "path": "golib/consistent",
+          "info": {
+            "name": "consistent",
+            "size": 238,
+            "mode": 2147484141,
+            "modTime": "2017-10-17T11:07:54+08:00",
+            "isDir": true
+          },
+          "children": {
+            "README.md": {
+              "path": "golib/consistent/README.md",
+              "info": {
+                "name": "README.md",
+                "size": 793,
+                "mode": 493,
+                "modTime": "2017-07-26T11:26:18+08:00",
+                "isDir": false
+              }
+            },
+            "consistent.go": {
+              "path": "golib/consistent/consistent.go",
+              "info": {
+                "name": "consistent.go",
+                "size": 6225,
+                "mode": 493,
+                "modTime": "2017-10-17T11:17:52+08:00",
+                "isDir": false
+              }
+            },
+            "consistent_test.go": {
+              "path": "golib/consistent/consistent_test.go",
+              "info": {
+                "name": "consistent_test.go",
+                "size": 14683,
+                "mode": 493,
+                "modTime": "2017-07-26T11:26:18+08:00",
+                "isDir": false
+              }
+            },
+            "doc.md": {
+              "path": "golib/consistent/doc.md",
+              "info": {
+                "name": "doc.md",
+                "size": 1663,
+                "mode": 420,
+                "modTime": "2017-10-17T11:10:41+08:00",
+                "isDir": false
+              }
+            },
+            "example_test.go": {
+              "path": "golib/consistent/example_test.go",
+              "info": {
+                "name": "example_test.go",
+                "size": 2508,
+                "mode": 493,
+                "modTime": "2017-10-17T11:17:05+08:00",
+                "isDir": false
+              }
+            }
+          }
+        },
+        "dirtree": {
+          "path": "golib/dirtree",
+          "info": {
+            "name": "dirtree",
+            "size": 238,
+            "mode": 2147484141,
+            "modTime": "2017-10-19T17:09:58+08:00",
+            "isDir": true
+          },
+          "children": {
+            "README.md": {
+              "path": "golib/dirtree/README.md",
+              "info": {
+                "name": "README.md",
+                "size": 349,
+                "mode": 420,
+                "modTime": "2017-10-18T20:30:08+08:00",
+                "isDir": false
+              }
+            },
+            "dirtree.go": {
+              "path": "golib/dirtree/dirtree.go",
+              "info": {
+                "name": "dirtree.go",
+                "size": 4141,
+                "mode": 420,
+                "modTime": "2017-10-19T17:23:37+08:00",
+                "isDir": false
+              }
+            },
+            "dirtree_test.go": {
+              "path": "golib/dirtree/dirtree_test.go",
+              "info": {
+                "name": "dirtree_test.go",
+                "size": 1575,
+                "mode": 420,
+                "modTime": "2017-10-19T17:13:45+08:00",
+                "isDir": false
+              }
+            },
+            "test.json": {
+              "path": "golib/dirtree/test.json",
+              "info": {
+                "name": "test.json",
+                "size": 54938,
+                "mode": 429,
+                "modTime": "2017-10-19T17:21:20+08:00",
+                "isDir": false
+              }
+            }
+          }
+        },
+        "stringx": {
+          "path": "golib/stringx",
+          "info": {
+            "name": "stringx",
+            "size": 102,
+            "mode": 2147484141,
+            "modTime": "2017-10-17T11:26:50+08:00",
+            "isDir": true
+          },
+          "children": {
+            "reverse.go": {
+              "path": "golib/stringx/reverse.go",
+              "info": {
+                "name": "reverse.go",
+                "size": 234,
+                "mode": 420,
+                "modTime": "2017-10-17T11:31:23+08:00",
+                "isDir": false
+              }
+            }
+          }
+        }
+      }
+    },
+    "render": {
+      "path": "render",
+      "info": {
+        "name": "render",
+        "size": 816,
+        "mode": 2147484141,
+        "modTime": "2017-10-12T13:13:24+08:00",
+        "isDir": true
+      },
+      "children": {
+        "LICENSE": {
+          "path": "render/LICENSE",
+          "info": {
+            "name": "LICENSE",
+            "size": 1080,
+            "mode": 420,
+            "modTime": "2017-10-12T13:13:24+08:00",
+            "isDir": false
+          }
+        },
+        "README.md": {
+          "path": "render/README.md",
+          "info": {
+            "name": "README.md",
+            "size": 16865,
+            "mode": 420,
+            "modTime": "2017-10-12T13:45:52+08:00",
+            "isDir": false
+          }
+        },
+        "buffer.go": {
+          "path": "render/buffer.go",
+          "info": {
+            "name": "buffer.go",
+            "size": 1093,
+            "mode": 420,
+            "modTime": "2017-10-12T13:13:24+08:00",
+            "isDir": false
+          }
+        },
+        "doc.go": {
+          "path": "render/doc.go",
+          "info": {
+            "name": "doc.go",
+            "size": 1817,
+            "mode": 420,
+            "modTime": "2017-10-12T13:45:52+08:00",
+            "isDir": false
+          }
+        },
+        "engine.go": {
+          "path": "render/engine.go",
+          "info": {
+            "name": "engine.go",
+            "size": 4021,
+            "mode": 420,
+            "modTime": "2017-10-12T13:13:24+08:00",
+            "isDir": false
+          }
+        },
+        "engine_integration_test.go": {
+          "path": "render/engine_integration_test.go",
+          "info": {
+            "name": "engine_integration_test.go",
+            "size": 1445,
+            "mode": 420,
+            "modTime": "2017-10-12T13:13:24+08:00",
+            "isDir": false
+          }
+        },
+        "fixtures": {
+          "path": "render/fixtures",
+          "info": {
+            "name": "fixtures",
+            "size": 272,
+            "mode": 2147484141,
+            "modTime": "2017-10-12T13:13:24+08:00",
+            "isDir": true
+          },
+          "children": {
+            "amber": {
+              "path": "render/fixtures/amber",
+              "info": {
+                "name": "amber",
+                "size": 136,
+                "mode": 2147484141,
+                "modTime": "2017-10-12T13:13:24+08:00",
+                "isDir": true
+              },
+              "children": {
+                "example.amber": {
+                  "path": "render/fixtures/amber/example.amber",
+                  "info": {
+                    "name": "example.amber",
+                    "size": 139,
+                    "mode": 420,
+                    "modTime": "2017-10-12T13:13:24+08:00",
+                    "isDir": false
+                  }
+                },
+                "layouts": {
+                  "path": "render/fixtures/amber/layouts",
+                  "info": {
+                    "name": "layouts",
+                    "size": 102,
+                    "mode": 2147484141,
+                    "modTime": "2017-10-12T13:13:24+08:00",
+                    "isDir": true
+                  },
+                  "children": {
+                    "base.amber": {
+                      "path": "render/fixtures/amber/layouts/base.amber",
+                      "info": {
+                        "name": "base.amber",
+                        "size": 205,
+                        "mode": 420,
+                        "modTime": "2017-10-12T13:13:24+08:00",
+                        "isDir": false
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "basic": {
+              "path": "render/fixtures/basic",
+              "info": {
+                "name": "basic",
+                "size": 340,
+                "mode": 2147484141,
+                "modTime": "2017-10-12T13:13:24+08:00",
+                "isDir": true
+              },
+              "children": {
+                "admin": {
+                  "path": "render/fixtures/basic/admin",
+                  "info": {
+                    "name": "admin",
+                    "size": 102,
+                    "mode": 2147484141,
+                    "modTime": "2017-10-12T13:13:24+08:00",
+                    "isDir": true
+                  },
+                  "children": {
+                    "index.tmpl": {
+                      "path": "render/fixtures/basic/admin/index.tmpl",
+                      "info": {
+                        "name": "index.tmpl",
+                        "size": 21,
+                        "mode": 420,
+                        "modTime": "2017-10-12T13:13:24+08:00",
+                        "isDir": false
+                      }
+                    }
+                  }
+                },
+                "another_layout.tmpl": {
+                  "path": "render/fixtures/basic/another_layout.tmpl",
+                  "info": {
+                    "name": "another_layout.tmpl",
+                    "size": 38,
+                    "mode": 420,
+                    "modTime": "2017-10-12T13:13:24+08:00",
+                    "isDir": false
+                  }
+                },
+                "content.tmpl": {
+                  "path": "render/fixtures/basic/content.tmpl",
+                  "info": {
+                    "name": "content.tmpl",
+                    "size": 17,
+                    "mode": 420,
+                    "modTime": "2017-10-12T13:13:24+08:00",
+                    "isDir": false
+                  }
+                },
+                "current_layout.tmpl": {
+                  "path": "render/fixtures/basic/current_layout.tmpl",
+                  "info": {
+                    "name": "current_layout.tmpl",
+                    "size": 50,
+                    "mode": 420,
+                    "modTime": "2017-10-12T13:13:24+08:00",
+                    "isDir": false
+                  }
+                },
+                "delims.tmpl": {
+                  "path": "render/fixtures/basic/delims.tmpl",
+                  "info": {
+                    "name": "delims.tmpl",
+                    "size": 22,
+                    "mode": 420,
+                    "modTime": "2017-10-12T13:13:24+08:00",
+                    "isDir": false
+                  }
+                },
+                "hello.tmpl": {
+                  "path": "render/fixtures/basic/hello.tmpl",
+                  "info": {
+                    "name": "hello.tmpl",
+                    "size": 21,
+                    "mode": 420,
+                    "modTime": "2017-10-12T13:13:24+08:00",
+                    "isDir": false
+                  }
+                },
+                "hypertext.html": {
+                  "path": "render/fixtures/basic/hypertext.html",
+                  "info": {
+                    "name": "hypertext.html",
+                    "size": 11,
+                    "mode": 420,
+                    "modTime": "2017-10-12T13:13:24+08:00",
+                    "isDir": false
+                  }
+                },
+                "layout.tmpl": {
+                  "path": "render/fixtures/basic/layout.tmpl",
+                  "info": {
+                    "name": "layout.tmpl",
+                    "size": 22,
+                    "mode": 420,
+                    "modTime": "2017-10-12T13:13:24+08:00",
+                    "isDir": false
+                  }
+                }
+              }
+            },
+            "blocks": {
+              "path": "render/fixtures/blocks",
+              "info": {
+                "name": "blocks",
+                "size": 170,
+                "mode": 2147484141,
+                "modTime": "2017-10-12T13:13:24+08:00",
+                "isDir": true
+              },
+              "children": {
+                "content-partial.tmpl": {
+                  "path": "render/fixtures/blocks/content-partial.tmpl",
+                  "info": {
+                    "name": "content-partial.tmpl",
+                    "size": 55,
+                    "mode": 420,
+                    "modTime": "2017-10-12T13:13:24+08:00",
+                    "isDir": false
+                  }
+                },
+                "content.tmpl": {
+                  "path": "render/fixtures/blocks/content.tmpl",
+                  "info": {
+                    "name": "content.tmpl",
+                    "size": 96,
+                    "mode": 420,
+                    "modTime": "2017-10-12T13:13:24+08:00",
+                    "isDir": false
+                  }
+                },
+                "layout.tmpl": {
+                  "path": "render/fixtures/blocks/layout.tmpl",
+                  "info": {
+                    "name": "layout.tmpl",
+                    "size": 57,
+                    "mode": 420,
+                    "modTime": "2017-10-12T13:13:24+08:00",
+                    "isDir": false
+                  }
+                }
+              }
+            },
+            "custom_funcs": {
+              "path": "render/fixtures/custom_funcs",
+              "info": {
+                "name": "custom_funcs",
+                "size": 102,
+                "mode": 2147484141,
+                "modTime": "2017-10-12T13:13:24+08:00",
+                "isDir": true
+              },
+              "children": {
+                "index.tmpl": {
+                  "path": "render/fixtures/custom_funcs/index.tmpl",
+                  "info": {
+                    "name": "index.tmpl",
+                    "size": 19,
+                    "mode": 420,
+                    "modTime": "2017-10-12T13:13:24+08:00",
+                    "isDir": false
+                  }
+                }
+              }
+            },
+            "partials": {
+              "path": "render/fixtures/partials",
+              "info": {
+                "name": "partials",
+                "size": 170,
+                "mode": 2147484141,
+                "modTime": "2017-10-12T13:13:24+08:00",
+                "isDir": true
+              },
+              "children": {
+                "content-partial.tmpl": {
+                  "path": "render/fixtures/partials/content-partial.tmpl",
+                  "info": {
+                    "name": "content-partial.tmpl",
+                    "size": 55,
+                    "mode": 420,
+                    "modTime": "2017-10-12T13:13:24+08:00",
+                    "isDir": false
+                  }
+                },
+                "content.tmpl": {
+                  "path": "render/fixtures/partials/content.tmpl",
+                  "info": {
+                    "name": "content.tmpl",
+                    "size": 96,
+                    "mode": 420,
+                    "modTime": "2017-10-12T13:13:24+08:00",
+                    "isDir": false
+                  }
+                },
+                "layout.tmpl": {
+                  "path": "render/fixtures/partials/layout.tmpl",
+                  "info": {
+                    "name": "layout.tmpl",
+                    "size": 61,
+                    "mode": 420,
+                    "modTime": "2017-10-12T13:13:24+08:00",
+                    "isDir": false
+                  }
+                }
+              }
+            },
+            "template-dir-test": {
+              "path": "render/fixtures/template-dir-test",
+              "info": {
+                "name": "template-dir-test",
+                "size": 170,
+                "mode": 2147484141,
+                "modTime": "2017-10-12T13:13:24+08:00",
+                "isDir": true
+              },
+              "children": {
+                "0.tmpl": {
+                  "path": "render/fixtures/template-dir-test/0.tmpl",
+                  "info": {
+                    "name": "0.tmpl",
+                    "size": 0,
+                    "mode": 420,
+                    "modTime": "2017-10-12T13:13:24+08:00",
+                    "isDir": false
+                  }
+                },
+                "dedicated.tmpl": {
+                  "path": "render/fixtures/template-dir-test/dedicated.tmpl",
+                  "info": {
+                    "name": "dedicated.tmpl",
+                    "size": 102,
+                    "mode": 2147484141,
+                    "modTime": "2017-10-12T13:13:24+08:00",
+                    "isDir": true
+                  },
+                  "children": {
+                    "notbad.tmpl": {
+                      "path": "render/fixtures/template-dir-test/dedicated.tmpl/notbad.tmpl",
+                      "info": {
+                        "name": "notbad.tmpl",
+                        "size": 0,
+                        "mode": 420,
+                        "modTime": "2017-10-12T13:13:24+08:00",
+                        "isDir": false
+                      }
+                    }
+                  }
+                },
+                "subdir": {
+                  "path": "render/fixtures/template-dir-test/subdir",
+                  "info": {
+                    "name": "subdir",
+                    "size": 102,
+                    "mode": 2147484141,
+                    "modTime": "2017-10-12T13:13:24+08:00",
+                    "isDir": true
+                  },
+                  "children": {
+                    "1.tmpl": {
+                      "path": "render/fixtures/template-dir-test/subdir/1.tmpl",
+                      "info": {
+                        "name": "1.tmpl",
+                        "size": 0,
+                        "mode": 420,
+                        "modTime": "2017-10-12T13:13:24+08:00",
+                        "isDir": false
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "helpers.go": {
+          "path": "render/helpers.go",
+          "info": {
+            "name": "helpers.go",
+            "size": 533,
+            "mode": 420,
+            "modTime": "2017-10-13T09:43:13+08:00",
+            "isDir": false
+          }
+        },
+        "helpers_pre16.go": {
+          "path": "render/helpers_pre16.go",
+          "info": {
+            "name": "helpers_pre16.go",
+            "size": 691,
+            "mode": 420,
+            "modTime": "2017-10-12T13:13:24+08:00",
+            "isDir": false
+          }
+        },
+        "helpers_pre16_test.go": {
+          "path": "render/helpers_pre16_test.go",
+          "info": {
+            "name": "helpers_pre16_test.go",
+            "size": 1871,
+            "mode": 420,
+            "modTime": "2017-10-12T13:13:24+08:00",
+            "isDir": false
+          }
+        },
+        "helpers_test.go": {
+          "path": "render/helpers_test.go",
+          "info": {
+            "name": "helpers_test.go",
+            "size": 1885,
+            "mode": 420,
+            "modTime": "2017-10-12T13:13:24+08:00",
+            "isDir": false
+          }
+        },
+        "render.go": {
+          "path": "render/render.go",
+          "info": {
+            "name": "render.go",
+            "size": 14878,
+            "mode": 420,
+            "modTime": "2017-10-13T10:01:47+08:00",
+            "isDir": false
+          }
+        },
+        "render_data_test.go": {
+          "path": "render/render_data_test.go",
+          "info": {
+            "name": "render_data_test.go",
+            "size": 1650,
+            "mode": 420,
+            "modTime": "2017-10-12T13:13:24+08:00",
+            "isDir": false
+          }
+        },
+        "render_html_test.go": {
+          "path": "render/render_html_test.go",
+          "info": {
+            "name": "render_html_test.go",
+            "size": 9955,
+            "mode": 420,
+            "modTime": "2017-10-12T13:13:24+08:00",
+            "isDir": false
+          }
+        },
+        "render_json_test.go": {
+          "path": "render/render_json_test.go",
+          "info": {
+            "name": "render_json_test.go",
+            "size": 7179,
+            "mode": 420,
+            "modTime": "2017-10-12T13:13:24+08:00",
+            "isDir": false
+          }
+        },
+        "render_jsonp_test.go": {
+          "path": "render/render_jsonp_test.go",
+          "info": {
+            "name": "render_jsonp_test.go",
+            "size": 2858,
+            "mode": 420,
+            "modTime": "2017-10-12T13:13:24+08:00",
+            "isDir": false
+          }
+        },
+        "render_test.go": {
+          "path": "render/render_test.go",
+          "info": {
+            "name": "render_test.go",
+            "size": 1274,
+            "mode": 420,
+            "modTime": "2017-10-12T13:13:24+08:00",
+            "isDir": false
+          }
+        },
+        "render_text_test.go": {
+          "path": "render/render_text_test.go",
+          "info": {
+            "name": "render_text_test.go",
+            "size": 2635,
+            "mode": 420,
+            "modTime": "2017-10-12T13:13:24+08:00",
+            "isDir": false
+          }
+        },
+        "render_xml_test.go": {
+          "path": "render/render_xml_test.go",
+          "info": {
+            "name": "render_xml_test.go",
+            "size": 3537,
+            "mode": 420,
+            "modTime": "2017-10-12T13:13:24+08:00",
+            "isDir": false
+          }
+        }
+      }
+    }
+  }
+}
