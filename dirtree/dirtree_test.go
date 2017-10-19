@@ -16,7 +16,7 @@ func matchRecursively(node *Node, query string) {
 	}
 }
 
-func TestDirTree(t *testing.T) {
+func DirTree(t *testing.T) {
 	dir, err := os.Getwd()
 	if err != nil {
 		t.Fatalf("error getting working directory: %v\n", err)
@@ -25,7 +25,19 @@ func TestDirTree(t *testing.T) {
 	if err != nil {
 		t.Fatalf("error traversing the filesystem: %v\n", err)
 	}
-	matchRecursively(root, "data")
+	// matchRecursively(root, "data")
+	fmt.Println(root.String())
+}
+
+func TestDirTree2(t *testing.T) {
+	root, err := New("../../../")
+	if err != nil {
+		t.Fatalf("error traversing the filesystem: %v\n", err)
+	}
+	// matchRecursively(root, "data")
+	fmt.Println(root.String())
+	// js, _ := json.Marshal(root)
+	// fmt.Println(string(js))
 }
 
 // func TestDirTree(t *testing.T) {

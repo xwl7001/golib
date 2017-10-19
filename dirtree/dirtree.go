@@ -9,8 +9,12 @@
 package dirtree
 
 import (
+	"io/ioutil"
+	"log"
 	"os"
+	"path"
 	"path/filepath"
+	"strings"
 	"time"
 )
 
@@ -30,42 +34,131 @@ func fileInfoFromInterface(v os.FileInfo) *FileInfo {
 
 // Node represents a node in a directory tree.
 type Node struct {
-	FullPath string    `json:"path"`
-	Info     *FileInfo `json:"info"`
-	Children []*Node   `json:"children"`
-	Parent   *Node     `json:"-"`
+	FullPath string           `json:"path"`
+	Info     *FileInfo        `json:"-"`
+	Children map[string]*Node `json:"children"`
+	Parent   *Node            `json:"-"`
+}
+
+func (n *Node) addFolder(fi os.FileInfo) {
+	name := fi.Name()
+	if IsHidden(name) {
+		return
+	}
+	FullPath := name
+	if n.FullPath != "" {
+		FullPath = filepath.Join(n.FullPath, name)
+	}
+	// fmt.Println(FullPath)
+
+	dir := &Node{
+		FullPath: FullPath,
+		Info:     fileInfoFromInterface(fi),
+		Children: make(map[string]*Node),
+		Parent:   n,
+	}
+
+	files, err := ioutil.ReadDir(FullPath)
+	if err != nil {
+		log.Fatalln(err)
+		return
+	}
+	for _, fi := range files {
+		if fi.IsDir() {
+			dir.addFolder(fi)
+		} else {
+			dir.addFile(fi)
+		}
+	}
+	n.Children[name] = dir
+
+}
+
+func (n *Node) addFile(fi os.FileInfo) {
+	name := fi.Name()
+	if IsHidden(name) {
+		return
+	}
+	FullPath := name
+	if n.Parent != nil {
+		FullPath = filepath.Join(n.Parent.FullPath, name)
+	}
+	dir := &Node{
+		FullPath: FullPath,
+		Info:     fileInfoFromInterface(fi),
+		Children: make(map[string]*Node),
+		Parent:   n,
+	}
+	n.Children[name] = dir
+}
+
+// func (f *Node) getFolder(path string) *Node {
+// 	segments := SplitPath(path)
+// 	if len(segments) == 1 {
+// 		return f.Children[path]
+// 	} else {
+// 		return f.getFolder(strings.Join(segments[1:], string(os.PathSeparator)))
+// 	}
+// }
+
+func (n *Node) String() string {
+	res := make([]string, 0)
+	res = append(res, n.FullPath)
+	for _, node := range n.Children {
+		res = append(res, node.String())
+	}
+	return strings.Join(res, "\n")
+}
+
+// Name returns node's folder/file name
+func (n *Node) Name() string {
+	return NodeName(n.FullPath)
+}
+
+// NodeName returns a path's folder/file name
+func NodeName(path string, separator ...string) string {
+	segments := SplitPath(path, separator...)
+	return segments[len(segments)-1]
+}
+
+// SplitPath get all segments form given path
+func SplitPath(path string, separator ...string) []string {
+	sep := string(os.PathSeparator)
+	if len(separator) == 1 {
+		sep = separator[0]
+	}
+
+	return strings.Split(path, sep)
+}
+
+func IsHidden(name string) bool {
+	return strings.HasPrefix(name, ".")
 }
 
 // New Create directory hierarchy.
-func New(root string) (result *Node, err error) {
+func New(root string) (*Node, error) {
 	absRoot, err := filepath.Abs(root)
+	log.Println("absRoot:", absRoot)
 	if err != nil {
-		return
+		return nil, err
 	}
-	parents := make(map[string]*Node)
-	walkFunc := func(path string, info os.FileInfo, err error) error {
-		if err != nil {
-			return err
-		}
-		parents[path] = &Node{
-			FullPath: path,
-			Info:     fileInfoFromInterface(info),
-			Children: make([]*Node, 0),
-		}
-		return nil
+
+	files, err := ioutil.ReadDir(absRoot)
+	if err != nil {
+		return nil, err
 	}
-	if err = filepath.Walk(absRoot, walkFunc); err != nil {
-		return
+	cleanRoot := path.Clean(root)
+	log.Println("clen root:", cleanRoot)
+	res := &Node{
+		FullPath: cleanRoot,
+		Children: make(map[string]*Node),
 	}
-	for path, node := range parents {
-		parentPath := filepath.Dir(path)
-		parent, exists := parents[parentPath]
-		if !exists { // If a parent does not exist, this is the root.
-			result = node
+	for _, fi := range files {
+		if fi.IsDir() {
+			res.addFolder(fi)
 		} else {
-			node.Parent = parent
-			parent.Children = append(parent.Children, node)
+			res.addFile(fi)
 		}
 	}
-	return
+	return res, nil
 }
